@@ -1,6 +1,18 @@
 # 1.0.0 (2025-08-19)
 
 
+### Bug Fixes
+
+* publishConfig access ([5e86537](https://github.com/SourceRegistry/node-ovsdb/commit/5e86537f0f957ecd45719ca8398025f311e86d83))
+
+
+### Features
+
+* trigger release ([4107f7f](https://github.com/SourceRegistry/node-ovsdb/commit/4107f7f693b6f5a972fcb567d5ffb6796879b01f))
+
+# 1.0.0 (2025-08-19)
+
+
 ### Features
 
 * trigger release ([4107f7f](https://github.com/SourceRegistry/node-ovsdb/commit/4107f7f693b6f5a972fcb567d5ffb6796879b01f))
