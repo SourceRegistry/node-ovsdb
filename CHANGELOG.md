@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/SourceRegistry/node-ovsdb/compare/v1.0.0...v1.0.1) (2025-08-19)
+
+
+### Bug Fixes
+
+* import definition in package.json ([4440c1a](https://github.com/SourceRegistry/node-ovsdb/commit/4440c1a51d0b1bad9a5bdbb0c39e5508271a8d56))
+
 # 1.0.0 (2025-08-19)
 
 
