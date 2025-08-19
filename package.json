@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Open vSwitch Database Management Protocol typescript client",
   "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
+  "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
+      "import": "./dist/index.es.js",
       "require": "./dist/index.cjs"
     }
   },
