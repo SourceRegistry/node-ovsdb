@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/SourceRegistry/node-ovsdb/compare/v1.0.1...v1.0.2) (2025-08-19)
+
+
+### Bug Fixes
+
+* types export definition in package.json ([5d1b95e](https://github.com/SourceRegistry/node-ovsdb/commit/5d1b95e224b4115c08c86b23d5f6885a7caab30f))
+
 ## [1.0.1](https://github.com/SourceRegistry/node-ovsdb/compare/v1.0.0...v1.0.1) (2025-08-19)
 
 

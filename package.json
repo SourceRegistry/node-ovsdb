@@ -1,6 +1,6 @@
 {
   "name": "@sourceregistry/node-ovsdb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Open vSwitch Database Management Protocol typescript client",
   "main": "./dist/index.cjs",
   "module": "./dist/index.es.js",
