@@ -1,0 +1,60 @@
+{
+  "name": "@sourceregistry/node-ovsdb",
+  "version": "0.0.1",
+  "description": "Open vSwitch Database Management Protocol typescript client",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SourceRegistry/node-ovsdb.git"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.3",
+    "vitest": "^3.2.4",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "keywords": [
+    "networking",
+    "ovs",
+    "Open vSwitch",
+    "RFC7047",
+    "ISSN2070-1721 "
+  ],
+  "author": "A.P.A. Slaa (a.p.a.slaa@projectsource.nl)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SourceRegistry/node-ovsdb/issues"
+  },
+  "homepage": "https://github.com/SourceRegistry/node-ovsdb#readme",
+  "release": {
+    "branches": ["main"],
+    "plugins": [
+      ["@semantic-release/commit-analyzer"],
+      ["@semantic-release/release-notes-generator"],
+      ["@semantic-release/changelog"],
+      ["@semantic-release/npm"],
+      ["@semantic-release/git", {
+        "assets": ["package.json", "CHANGELOG.md"],
+        "message": "chore(release): 🚀 ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }]
+    ]
+  }
+}
