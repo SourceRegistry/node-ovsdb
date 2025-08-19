@@ -49,6 +49,9 @@
     "url": "https://github.com/SourceRegistry/node-ovsdb/issues"
   },
   "homepage": "https://github.com/SourceRegistry/node-ovsdb#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "release": {
     "branches": [
       "main"
@@ -73,7 +76,7 @@
             "package.json",
             "CHANGELOG.md"
           ],
-          "message": "chore(release): 🚀 ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+          "message": "node-ovsdb(release): 🚀 ${nextRelease.version} \n\n${nextRelease.notes}"
         }
       ]
     ]
