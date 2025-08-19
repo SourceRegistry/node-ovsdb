@@ -1,7 +1,7 @@
 # @sourceregistry/node-ovsdb
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-
+[![Release to NPM](https://github.com/SourceRegistry/node-ovsdb/actions/workflows/publish-npm.yml/badge.svg)](https://github.com/SourceRegistry/node-ovsdb/actions/workflows/publish-npm.yml)
 
 A lightweight, typesafe TypeScript client for the Open vSwitch Database (OVSDB) Management Protocol, as defined in [RFC 7047](https://datatracker.ietf.org/doc/html/rfc7047).
 
