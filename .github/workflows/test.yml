@@ -1,0 +1,46 @@
+name: Testing
+on:
+  push
+
+jobs:
+  test:
+    name: Run tests and build
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: "https://registry.npmjs.org/"
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
+        run: npm test
+      - name: Build package
+        run: npm run build
+      - name: Smoke test CLI
+        run: node bin/ovsdb-generate.cjs --help
+      - name: Smoke test CLI generation
+        run: |
+          mkdir -p tmp
+          node bin/ovsdb-generate.cjs --schema ./tests/fixtures/openvswitch.schema.json --out ./tmp/ovsdb.generated.ts --name GeneratedDb
+          test -f ./tmp/ovsdb.generated.ts
+          grep 'export interface GeneratedDb' ./tmp/ovsdb.generated.ts
+      - name: Start OVSDB integration stack
+        run: docker compose -f docker-compose.integration.yml up -d --build
+      - name: Run integration tests
+        env:
+          OVSDB_INTEGRATION: "1"
+          OVSDB_HOST: "127.0.0.1"
+          OVSDB_PORT: "6640"
+        run: npm run test:integration
+      - name: Stop OVSDB integration stack
+        if: always()
+        run: docker compose -f docker-compose.integration.yml down -v

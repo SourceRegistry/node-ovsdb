@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": "dist-cli",
+    "declaration": false,
+    "declarationMap": false,
+    "sourceMap": false
+  },
+  "include": [
+    "src/cli.ts",
+    "src/generator.ts",
+    "src/index.ts",
+    "src/types/index.ts"
+  ]
+}

@@ -81,6 +81,7 @@ out
 # Nuxt.js build / generate output
 .nuxt
 dist
+dist-cli
 
 # Gatsby files
 .cache/
@@ -126,6 +127,10 @@ dist
 
 # Webstorm
 .idea
+
+# Generated
+generated
+tmp
 
 # yarn v3
 .pnp.*
