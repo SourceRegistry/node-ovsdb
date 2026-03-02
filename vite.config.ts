@@ -1,20 +1,22 @@
 /// <reference types="vitest" />
-// Configure Vitest (https://vitest.dev/config/)
-import {defineConfig} from 'vite';
-import dts from 'vite-plugin-dts';
+import {defineConfig} from "vitest/config";
+import dts from "vite-plugin-dts";
 
 export default defineConfig({
     build: {
         lib: {
-            entry: 'src/index.ts',
-            formats: ['es', 'cjs'],
-            fileName: (format) => `index.${format}.js`
+            entry: "src/index.ts",
+            formats: ["es", "cjs"],
+            fileName: (format) => format === "es" ? "index.es" : "index.cjs"
         },
         rollupOptions: {
-            external: ['fs', 'net'],
+            external: [/^node:/]
         },
         sourcemap: true,
-        target: 'node22'
+        target: "node18"
     },
-    plugins: [dts()]
+    plugins: [dts()],
+    test: {
+        environment: "node"
+    }
 });

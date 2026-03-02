@@ -1,0 +1,7 @@
+services:
+  ovsdb:
+    build:
+      context: .
+      dockerfile: docker/ovsdb/Dockerfile
+    ports:
+      - "6640:6640"
