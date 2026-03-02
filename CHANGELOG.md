@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/SourceRegistry/node-ovsdb/compare/v1.0.3...v1.0.4) (2026-03-02)
+
+
+### Bug Fixes
+
+* update to better support api and added best effort for testing. ([73879ed](https://github.com/SourceRegistry/node-ovsdb/commit/73879ed60c1a748fafaa5f1e3c88e3e0ba68ac2b))
+
 ## [1.0.3](https://github.com/SourceRegistry/node-ovsdb/compare/v1.0.2...v1.0.3) (2026-03-02)
 
 
