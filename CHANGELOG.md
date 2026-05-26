@@ -1,3 +1,12 @@
+## [1.0.5](https://github.com/SourceRegistry/node-ovsdb/compare/v1.0.4...v1.0.5) (2026-05-26)
+
+
+### Bug Fixes
+
+* release pipeline and also release on node-ovsdb ([0f5e6d7](https://github.com/SourceRegistry/node-ovsdb/commit/0f5e6d76c2ef871e171cce89ac0175df878a8acb))
+* release pipeline and also release on node-ovsdb ([a851006](https://github.com/SourceRegistry/node-ovsdb/commit/a85100688fc646fbdfe5f2ce44982cfecd45d40d))
+* release pipeline and updated devDependencies ([7f03ab1](https://github.com/SourceRegistry/node-ovsdb/commit/7f03ab1dc21069f7e427e82a5cee97762f2debf5))
+
 ## [1.0.4](https://github.com/SourceRegistry/node-ovsdb/compare/v1.0.3...v1.0.4) (2026-03-02)
 
 
