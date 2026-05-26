@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![npm version](https://img.shields.io/npm/v/%40sourceregistry%2Fnode-ovsdb)](https://www.npmjs.com/package/@sourceregistry/node-ovsdb)
 [![codecov](https://codecov.io/gh/SourceRegistry/node-ovsdb/graph/badge.svg)](https://codecov.io/gh/SourceRegistry/node-ovsdb)
-[![Release to NPM](https://github.com/SourceRegistry/node-ovsdb/actions/workflows/publish-npm.yml/badge.svg)](https://github.com/SourceRegistry/node-ovsdb/actions/workflows/publish-npm.yml)
+[![CI](https://github.com/SourceRegistry/node-ovsdb/actions/workflows/ci.yml/badge.svg)](https://github.com/SourceRegistry/node-ovsdb/actions/workflows/ci.yml)
 
 Low-level OVSDB client for Node.js with:
 
