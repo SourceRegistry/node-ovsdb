@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/SourceRegistry/node-ovsdb/compare/v1.0.5...v1.0.6) (2026-05-26)
+
+
+### Bug Fixes
+
+* **docs:** change github workflow badge ([4175f2a](https://github.com/SourceRegistry/node-ovsdb/commit/4175f2afb159c3b447e35837411ba282f563d928))
+
 ## [1.0.5](https://github.com/SourceRegistry/node-ovsdb/compare/v1.0.4...v1.0.5) (2026-05-26)
 
 
