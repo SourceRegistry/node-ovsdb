@@ -83,6 +83,11 @@ jobs:
         run: npm run build
       - name: Run semantic-release
         run: npx semantic-release
+      - name: Publish as node-ovsdb
+        run: |
+          npm pkg set name=node-ovsdb
+          npm publish --access public
+          npm pkg set name=@sourceregistry/node-ovsdb
 
   deploy-docs:
     name: Deploy Docs
